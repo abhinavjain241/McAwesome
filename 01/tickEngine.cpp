@@ -13,6 +13,14 @@ class Symbol {
         map<string, Field> mapSymbol;
 };
 
+bool compfunction (pair<int, vector<Symbol> > a, pair<int, vector<Symbol> > b) {
+    return (a.first < b.first);
+}
+
+long long unsigned int sum(vector <pair<int, vector<Symbol> > > data, int start_time, int end_time, string symbol, string field) {
+
+}
+
 int main() {
     vector <pair<int, vector<Symbol> > > vectTicksEngine;
     int nTicks;
@@ -39,8 +47,8 @@ int main() {
         while (itfName < tokenizedInput.end()) {
             itfValue = itfName;
             itfValue++;
-            tempFld.mapField[*itfName]=atoi((*itfValue).c_str());
-            itfName+=2;
+            tempFld.mapField[*itfName] = atoi((*itfValue).c_str());
+            itfName += 2;
         }
         tempSymb.mapSymbol[symb]=tempFld;
         if (!vectTicksEngine.empty() && vectTicksEngine.back().first==timestamp)
@@ -52,5 +60,10 @@ int main() {
         }
         nTicks--;
     }
+    cout << "tickfile completed" << endl;
+    // string query;
+    // getline(std::cin, query);
+    // stringstream queryInput(query);
+    // istream_iterator <string> it()
     return 0;
 }
