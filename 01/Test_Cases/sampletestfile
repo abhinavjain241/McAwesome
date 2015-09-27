@@ -1,9 +1,10 @@
-tickfile 5
+tickfile 6
 10 s1 f1 100 f3 120
 10 s2 f1 200 f2 210 f3 220
 11 s1 f2 110
 12 s1 f3 121
 15 s2 f2 211 f3 221
+16 s2 f2 230 f3 140
 sum 9 16 s1 f3
 sum 10 15 s2 f2
 product 10 15 s2 f2 f3
@@ -11,4 +12,4 @@ max 10 15 s1 f1 2
 max 10 12 s1 f3 2
 max 10 15 s2 f2 3
 max 10 10 s2 f1 1
-delta s2 f2 3
+delta s2 f2 200
