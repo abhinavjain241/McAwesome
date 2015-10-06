@@ -134,11 +134,8 @@ for b in sys.stdin:
 					counter = counter + 1 # Increment the counter for ticks
 
 		for i in range(0, len(segment_list)):
-			print segment_list[i][2]
 			finalcost += segment_list[i][2]
 
-		print segment_list[3]
-
  		finalcost += len(segment_list) * k # Finally , sum up the penalties for all segments, which is basically (n * k), and add to final cost
-		# finalcost = int(math.ceil(finalcost))
+		finalcost = int(math.ceil(finalcost))
 		print finalcost
