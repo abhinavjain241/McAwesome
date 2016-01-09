@@ -1,0 +1,7 @@
+# R Project Files
+.Rproj.user
+.Rhistory
+.RData
+
+# Binary Files
+tickEngine
